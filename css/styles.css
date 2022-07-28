@@ -1,13 +1,53 @@
 :root {
     --clr-white: #fff;
     --clr-black: #000;
-    --ff-main: "Poppins", sans-serif;
+    --clr-yellow:#FCB72B;
+    --clr-dark:#495567;
+    --clr-grey:#939CAA;
+    --clr-light-grey:#E5ECF4;
+    --clr-snow:#F2F5F9;
+    --clr-light-yellow:#FFF4DF;
+    --ff-main: "Space Mono", sans-serif;
+    --ff-secondary:"Lexend Deca", sans-serif;
     --font-weight: 400;
     --fw-bold: 700;
     --fw-medium: 500;
     --font-size: 16px;
     --transition-time: 0.3s;
 }
+
+/*******************************
+    FONTS
+********************************/
+
+/* lexend-deca-regular - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* space-mono-regular - latin */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/space-mono-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* space-mono-700 - latin */
+  @font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 /*******************************
     GENERAL STYLES
@@ -52,6 +92,17 @@ h3,
 h4,
 p {
     margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: var(--fw-bold);
+}
+
+p{
+    font-weight: 400;
 }
 
 .btn{
