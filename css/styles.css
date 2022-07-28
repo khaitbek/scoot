@@ -387,9 +387,18 @@ HEADER
 }
 /* .easy__list {
 } */
+
+.easy__list{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
 .easy__item {
     position: relative;
-    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    height: 445px;
 }
 /* .easy__item--water{   
 } */
@@ -397,20 +406,34 @@ HEADER
     position: absolute;
     content: "";
     width: 740px;
-    height: 445px;
-    background-repeat: no-repeat;    
+    height: 100%;
+    background-repeat: no-repeat;   
+    background-size: contain; 
 }
+
+.easy__item:nth-child(odd)::before{
+    left: calc(50% + 20px);
+}
+
+.easy__item:nth-child(even)::before{
+    right: calc(50% + 20px);
+}
+
 .easy__item--girl::before{
     background-image: url("../photos/1.png");
-    left: calc(50% + 20px);
 }
 .easy__item--water::before{
     background-image: url("../photos/2.png");
-    right: calc(50% + 20px);
 }
 .easy__item--many::before{
     background-image: url("../photos/3.png");
-    left: calc(50% + 150px);
+}
+.easy__item--mobility::before{
+    background-image: url("../images/main_images/Group\ 15.png");
+}
+
+.easy__item--urban::before{
+    background-image: url("../images/main_images/Group\ 14.png");
 }
 .easy__heading {
     margin-bottom: 24px;
@@ -442,6 +465,14 @@ HEADER
 .easy__box--second{
     margin-left: auto;
 }
+
+
+/*******************************
+    ABOUT PAGE
+********************************/
+
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
