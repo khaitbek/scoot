@@ -1,14 +1,14 @@
 :root {
     --clr-white: #fff;
     --clr-black: #000;
-    --clr-yellow:#FCB72B;
-    --clr-dark:#495567;
-    --clr-grey:#939CAA;
-    --clr-light-grey:#E5ECF4;
-    --clr-snow:#F2F5F9;
-    --clr-light-yellow:#FFF4DF;
+    --clr-yellow: #FCB72B;
+    --clr-dark: #495567;
+    --clr-grey: #939CAA;
+    --clr-light-grey: #E5ECF4;
+    --clr-snow: #F2F5F9;
+    --clr-light-yellow: #FFF4DF;
     --ff-main: "Space Mono", sans-serif;
-    --ff-secondary:"Lexend Deca", sans-serif;
+    --ff-secondary: "Lexend Deca", sans-serif;
     --font-weight: 400;
     --fw-bold: 700;
     --fw-medium: 500;
@@ -26,9 +26,11 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+        url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* space-mono-regular - latin */
 @font-face {
@@ -36,28 +38,35 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/space-mono-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/space-mono-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* space-mono-700 - latin */
-  @font-face {
+        url('../fonts/space-mono-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/space-mono-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* space-mono-700 - latin */
+@font-face {
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
     src: local(''),
-         url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/space-mono-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+        url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/space-mono-v11-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /*******************************
     GENERAL STYLES
 ********************************/
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-html{
+html {
     height: 100%;
     box-sizing: border-box;
 }
@@ -67,7 +76,7 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family:var(--ff-main);
+    font-family: var(--ff-main);
     scroll-behavior: smooth;
 }
 
@@ -81,7 +90,7 @@ ul {
     padding-left: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -97,18 +106,41 @@ p {
 h1,
 h2,
 h3,
-h4{
+h4 {
+    font-family: var(--ff-main);
     font-weight: var(--fw-bold);
 }
 
-p{
+p {
+    font-family: var(--ff-secondary);
     font-weight: 400;
 }
 
-.btn{
+.btn {
+    padding: 14px 48px;
+    text-align: center;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    border: 3px solid #FCB72B;
+}
+
+.btn-yellow {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    background-color: var(--clr-yellow);
+    color: var(--clr-white);
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+}
+
+.btn-yellow:hover{
+    background-color: var(--clr-white);
+    color: var(--clr-yellow);
 }
 
 .container {
@@ -130,26 +162,26 @@ p{
 }
 
 /* sticky footer */
-.site-main{
+.site-main {
     flex-grow: 1;
 }
 
-.text-black{
+.text-black {
     color: var(--clr-black);
 }
 
-.text-white{
+.text-white {
     color: var(--clr-white);
 }
 
-.fw-bold{
+.fw-bold {
     font-weight: var(--fw-bold);
 }
 
-.fw-medium{
+.fw-medium {
     font-weight: var(--fw-medium);
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
