@@ -591,6 +591,102 @@ HEADER
     color: var(--clr-grey);
 }
 
+/*******************************
+    QUESTIONS
+********************************/
+
+.questions {
+    margin-bottom: 160px;
+}
+
+.questions__wrapper {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.questions__heading {
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: var(--clr-dark);
+}
+
+.questions__content {
+    gap: 30px;
+}
+
+.questions__content__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: var(--clr-dark);
+}
+
+.questions__content__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: min(730px, 70%);
+}
+
+.questions__content__inner {
+    padding: 32px 40px;
+    background-color: var(--clr-snow);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+}
+
+.questions__content__inner:hover{
+    background-color: #FFF4DF;
+}
+
+.questions__summary {
+    position: relative;
+    list-style: none;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: var(--clr-dark);
+    cursor: pointer;
+    appearance: none;
+
+}
+
+.questions__summary::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 16px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.questions__detail[open] .questions__summary {
+    margin-bottom: 24px;
+}
+
+.questions__detail[open] .questions__summary::after{
+    background-image: url("../images/arrowTop.svg");
+}
+
+.questions__detail:not([open]) .questions__summary::after{
+    background-image: url("../images/arrowBottom.svg");
+}
+
+.questions__text {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--clr-dark);
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
