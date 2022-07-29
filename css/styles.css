@@ -754,7 +754,7 @@ only screen and (min-resolution: 2dppx) {
 .link__logo {
 } */
 .link__box {
-    margin: left 12px;
+    margin-left: 12px;
 }
 
 .link__text {
