@@ -426,7 +426,7 @@ HEADER
 .easy__item::before {
     position: absolute;
     content: "";
-    width: 740px;
+    width: 610px;
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -784,4 +784,39 @@ only screen and (min-resolution: 2dppx) {
 } */
 .article__heading {
     width: 415px;
+}
+
+
+/* FOOTER START  */
+.site-footer {
+    padding: 35px;
+    background-color: #333A44;
+}
+.site-footer__boxs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-footer__box {
+    display: flex;
+    align-items: center;
+}
+.site-footer__link-logo {
+    margin-right: 59px;
+}
+.site-footer__list {
+    display: flex;
+    align-items: center;
+}
+.site-footer__item {
+    margin-left: 24px;
+}
+.site-footer__item:nth-child(1){
+    margin-left: 0;
+}
+.itm__logo {
+    color: #FCB72B;
+}
+.itm__logo:hover{
+    color: #fff;
 }
