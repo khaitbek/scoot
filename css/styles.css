@@ -242,6 +242,23 @@ HEADER
     background-repeat: no-repeat;
 }
 
+.about-hero {
+    padding: 72px 0;
+    background-image: url("../photos/about-bg.jpg");
+}
+
+.locations-hero {
+    padding: 72px 0;
+    background-image: url("../photos/careers-bg.jpg");
+}
+
+.about-hero .hero__heading,
+.locations-hero .hero__heading {
+    margin: 0;
+}
+
+
+
 .hero::after {
     position: absolute;
     right: calc(50% - 805px);
@@ -268,6 +285,14 @@ HEADER
     background-repeat: no-repeat;
     background-image: url("../photos/arrow-right.svg");
 }
+
+.about-hero::after,
+.about-hero .hero__box::after,
+.locations-hero::after,
+.locations-hero .hero__box::after {
+    display: none;
+}
+
 
 .hero__heading {
     margin: 0;
@@ -545,7 +570,19 @@ HEADER
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    background-size: contain;
+}
+
+.values__item:nth-child(1)::before{
     background-image: url("../photos/value-one.jpg");
+}
+
+.values__item:nth-child(2)::before{
+    background-image: url("../photos/value-two.jpg");
+}
+
+.values__item:nth-child(3)::before{
+    background-image: url("../photos/value-three.jpg");
 }
 
 .values__item__count {
@@ -642,7 +679,7 @@ HEADER
     -o-transition: background 0.3s ease;
 }
 
-.questions__content__inner:hover{
+.questions__content__inner:hover {
     background-color: #FFF4DF;
 }
 
@@ -674,11 +711,11 @@ HEADER
     margin-bottom: 24px;
 }
 
-.questions__detail[open] .questions__summary::after{
+.questions__detail[open] .questions__summary::after {
     background-image: url("../images/arrowTop.svg");
 }
 
-.questions__detail:not([open]) .questions__summary::after{
+.questions__detail:not([open]) .questions__summary::after {
     background-image: url("../images/arrowBottom.svg");
 }
 
@@ -688,23 +725,57 @@ HEADER
     color: var(--clr-dark);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-    .easy__item--girl {
-        background-image: url("../photos/1@2x.png");
-    }
 
-    .easy__item--water {
-        background-image: url("../photos/2@2x.png");
-    }
+/*******************************
+    LOCATIONS PAGE
+********************************/
 
-    .easy__item--many {
-        background-image: url("../photos/3@2x.png");
-    }
+/*******************************
+    LOCATIONS SECTION
+********************************/
+
+.locations {
+    padding: 120px 0;
+}
+
+.locations__wrapper img {
+    margin-bottom: 120px;
+}
+
+.contact {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__title {
+    margin-right: 30px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--clr-dark);
+}
+
+.contact__wrapper {
+    margin-right: 105px;
+    align-items: center;
+}
+
+
+.contact__inner {
+    width: 445px;
+}
+
+.contact__text {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--clr-grey);
+}
+
+.contact__btn {
+    padding: 14px 44px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
 }
 
 /* ARTICLE SECTION START  */
@@ -784,4 +855,44 @@ only screen and (min-resolution: 2dppx) {
 } */
 .article__heading {
     width: 415px;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .easy__item--girl {
+        background-image: url("../photos/1@2x.png");
+    }
+
+    .easy__item--water {
+        background-image: url("../photos/2@2x.png");
+    }
+
+    .easy__item--many {
+        background-image: url("../photos/3@2x.png");
+    }
+
+    .about-hero{
+        background-image: url("../photos/about@2x.jpg");
+    }
+
+    .locations-hero{
+        background-image: url("../photos/careers-bg@2x.jpg");
+    }
+
+    .values__item:nth-child(1)::before{
+        background-image: url("../images/values-one@2x.jpg");
+    }
+    
+    .values__item:nth-child(2)::before{
+        background-image: url("../photos/value-two@2x.jpg");
+    }
+    
+    .values__item:nth-child(3)::before{
+        background-image: url("../photos/value-three@2x.jpg");
+    }
 }
