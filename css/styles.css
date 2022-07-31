@@ -451,7 +451,7 @@ HEADER
 .easy__item::before {
     position: absolute;
     content: "";
-    width: 740px;
+    width: 610px;
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -825,7 +825,7 @@ HEADER
 .link__logo {
 } */
 .link__box {
-    margin: left 12px;
+    margin-left: 12px;
 }
 
 .link__text {
@@ -857,6 +857,40 @@ HEADER
     width: 415px;
 }
 
+
+
+/* FOOTER START  */
+.site-footer {
+    padding: 35px;
+    background-color: #333A44;
+}
+.site-footer__boxs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-footer__box {
+    display: flex;
+    align-items: center;
+}
+.site-footer__link-logo {
+    margin-right: 59px;
+}
+.site-footer__list {
+    display: flex;
+    align-items: center;
+}
+.site-footer__item {
+    margin-left: 24px;
+}
+.site-footer__item:nth-child(1){
+    margin-left: 0;
+}
+.itm__logo {
+    color: #FCB72B;
+}
+.itm__logo:hover{
+    color: #fff;
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -895,4 +929,5 @@ only screen and (min-resolution: 2dppx) {
     .values__item:nth-child(3)::before{
         background-image: url("../photos/value-three@2x.jpg");
     }
+
 }
