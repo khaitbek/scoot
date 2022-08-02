@@ -451,8 +451,8 @@ HEADER
 .easy__item::before {
     position: absolute;
     content: "";
-    width: 610px;
-    height: 61%;
+    width: 740px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -825,7 +825,7 @@ HEADER
 .link__logo {
 } */
 .link__box {
-    margin-left: 12px;
+    margin: left 12px;
 }
 
 .link__text {
@@ -858,40 +858,6 @@ HEADER
 }
 
 
-
-/* FOOTER START  */
-.site-footer {
-    padding: 35px;
-    background-color: #333A44;
-}
-.site-footer__boxs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.site-footer__box {
-    display: flex;
-    align-items: center;
-}
-.site-footer__link-logo {
-    margin-right: 59px;
-}
-.site-footer__list {
-    display: flex;
-    align-items: center;
-}
-.site-footer__item {
-    margin-left: 24px;
-}
-.site-footer__item:nth-child(1){
-    margin-left: 0;
-}
-.itm__logo {
-    color: #FCB72B;
-}
-.itm__logo:hover{
-    color: #fff;
-}
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -929,85 +895,4 @@ only screen and (min-resolution: 2dppx) {
     .values__item:nth-child(3)::before{
         background-image: url("../photos/value-three@2x.jpg");
     }
-    .careers-hero {
-        background-image: url("../photos/careers-bg@2x.jpg");
-    }
-
-}
-
-
-/* CAREERS SECTION START  */
-/* .careers {
-    position: relative;
-    padding: 153px 0;
-    background-image: url("../photos/main-hero-bg-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-.careers-hero {
-    padding: 100px 0;
-    background-image: url("../photos/careers-bg.jpg");
-}
-
-.easy__box--mobility::before {
-    background-image: url("../images/main_images/Group\ 15.png");
-}
-.easy__boxs::before {
-    position: absolute;
-    content: "";
-    width: 610px;
-    height: 61%;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.easy__boxs::before {
-    left: calc(50% + 20px);
-}
-.careers {
-    padding: 120px 0 ;
-}
-
-/* GENERAL SECTION START  */
-
-.general {
-    padding-bottom: 160px;
-}
-.general__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-.general__item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 24px;
-    padding: 32px 64px 35px 40px;
-    background-color: #F2F5F9;
-}
-.general__hidden {
-    margin-bottom: 8px;
-    font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-/* identical to box height, or 117% */
-
-letter-spacing: -1.07143px;
-
-color: #495567;
-
-}
-.general__text {
-    font-family: 'Lexend Deca';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 25px;
-/* identical to box height, or 167% */
-
-
-color: #495567;
-
 }
